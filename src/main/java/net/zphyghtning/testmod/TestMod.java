@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.zphyghtning.testmod.block.ModBlocks;
 import net.zphyghtning.testmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -22,6 +23,7 @@ public class TestMod {
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
