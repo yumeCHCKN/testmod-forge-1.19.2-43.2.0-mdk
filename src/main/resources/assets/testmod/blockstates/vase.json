@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "testmod:block/vase"
+    },
+    "facing=south": {
+      "model": "testmod:block/vase",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "testmod:block/vase",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "testmod:block/vase",
+      "y": 90
+    }
+  }
+}
